@@ -4,12 +4,11 @@ import com.sacavix.ca.moneytransfers.application.port.in.SendMoneyCommand;
 import com.sacavix.ca.moneytransfers.application.port.in.SendMoneyPort;
 import com.sacavix.ca.moneytransfers.application.port.out.LoadAccountPort;
 import com.sacavix.ca.moneytransfers.application.port.out.UpdateAccountPort;
-import com.sacavix.ca.moneytransfers.common.UseCase;
 import com.sacavix.ca.moneytransfers.domain.Account;
 
 import javax.transaction.Transactional;
 
-@UseCase
+// Eliminar la anotación: UseCase
 public class SendMoneyService implements SendMoneyPort {
 
     private final LoadAccountPort loadAccountPort;
